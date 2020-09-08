@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:text="Running Focus"
+        android:gravity="center_horizontal"
+        android:background="#C4000000"
+        app:layout_editor_absoluteX="1dp"
+        app:layout_editor_absoluteY="1dp"
+        android:textSize="40sp"
+        android:textColor="#C6F41D1D"
+        android:textStyle="bold"
+        android:layout_marginRight="130dp"
+        android:id="@+id/texto_titulo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qual Seu Nome ?"
+        app:layout_editor_absoluteX="90dp"
+        android:textSize="30sp"
+        android:textColor="#05A81B"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/texto_titulo"
+        android:layout_marginTop="90dp"
+        android:id="@+id/texto_Nome" />
+
+    <EditText
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/texto_Nome"
+        app:layout_editor_absoluteX="5dp"
+        android:id="@+id/Inserir_Nome"
+        android:hint="Seu Nome Aqui.."
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meta De Corrida 'KM'"
+        app:layout_editor_absoluteX="60dp"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="#24005A"
+        android:id="@+id/Meta_Corrida"
+        app:layout_constraintTop_toBottomOf="@+id/Inserir_Nome"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/valor_meta"
+        android:hint="Digite a meta.."
+        android:textSize="20sp"
+        app:layout_editor_absoluteX="5dp"
+        android:gravity="center_horizontal"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/Meta_Corrida"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantos KM Correu Hoje?"
+        app:layout_editor_absoluteX="30dp"
+        android:textSize="30sp"
+        android:id="@+id/texto_KM"
+        app:layout_constraintTop_toBottomOf="@+id/valor_meta"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textColor="#E91E63"/>
+
+    <EditText
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        app:layout_editor_absoluteX="5dp"
+        android:hint="Digite a KM.."
+        android:inputType="number"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/texto_KM"
+        android:id="@+id/valor_km"/>
+
+    <Button
+        android:id="@+id/button_1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        app:layout_editor_absoluteX="55dp"
+        android:layout_marginTop="30dp"
+        android:onClick="ValidarDesempenho"
+        android:text="Validar Desempenho"
+        android:textStyle="bold"
+        android:background="#6DBAB8B9"
+        android:textColor="#B4871C1C"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/valor_km"/>
+
+    <TextView
+        android:layout_width="360sp"
+        android:layout_height="139sp"
+        android:layout_marginTop="19dp"
+        android:text="teste"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        android:id="@+id/texto_respsota"
+        app:layout_constraintTop_toBottomOf="@id/button_1"
+        android:textStyle="bold"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
