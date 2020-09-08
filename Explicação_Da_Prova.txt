@@ -1,0 +1,1 @@
+Está prova/aplicativo  tem como objetivo instigar ao usuário a estabelecer metas de treino "Corrida", aonde ele informa seu nome, sua meta e quantos Km ele correu naquele dia, nisto o aplicativo fala se ele ultrapassou a meta, chegou na meta ou não chegou e quantos KM faltam para ele chegar na meta estipulada dele.

@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
         if (nomeTexto.length == 0){
             texto_respsota.text="Digite Seu Nome!"
-            texto_respsota.setTextColor(Color.parseColor("#ff0d00"))
+            texto_respsota.setTextColor(Color.parseColor("#0000ff"))
             texto_respsota.visibility=view.visibility
         }
 
@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
         }
         else if (correu > metaCorrida){
             texto_respsota.text="Parabéns ${nomeTexto}, você Ultrapassou sua meta..Continue assim!"
-            texto_respsota.setTextColor(Color.parseColor("#0000ff"))
+            texto_respsota.setTextColor(Color.parseColor("#ff0d00"))
             texto_respsota.visibility=view.visibility
 
         }
